@@ -14,6 +14,7 @@ void chip8_Dealloc(const Chip8 **const chip8)
 
 void chip8_Init(Chip8 *const chip8)
 {
+	memset(chip8->memory, 0, sizeof(chip8->memory));
 	chip8_Reboot(chip8);
 
 	byte font[80] =
@@ -48,7 +49,6 @@ void chip8_Reboot(Chip8 *const chip8)
 {
 	chip8->pc = bROM;
 	stack_Init(&chip8->stack);
-	memset(chip8->memory, 0, sizeof(chip8->memory));
 	memset(chip8->videoMem, 0, sizeof(chip8->videoMem));
 	memset(chip8->keypad, 0, sizeof(chip8->keypad));
 	chip8->screenUpdateRequested = 0;
