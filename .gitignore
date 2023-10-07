@@ -6,6 +6,7 @@
 *.sln
 *.vcxproj
 *.vcxproj.filters
+*[Ii]ntermediate/
 
 # User-specific files
 *.rsuser
