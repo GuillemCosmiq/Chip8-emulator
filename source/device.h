@@ -25,4 +25,5 @@ void device_Destroy(Device* const device);
 void device_HandleInput(Device *const device, Chip8 *const chip8);
 void device_Draw(Device *const device, Chip8 *const chip8);
 void device_PlaySound(Device* const device, Chip8* const chip8);
+
 #endif

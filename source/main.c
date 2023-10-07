@@ -1,6 +1,8 @@
 #include "device.h"
 #include "chip8.h"
-#include "../extern/SDL/include/SDL.h"
+
+#include <SDL.h>
+
 #include <stdio.h>
 #include <stdlib.h>
 

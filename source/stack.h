@@ -2,7 +2,7 @@
 #define __STACK_H__
 
 #include "types.h"
-#include "assert.h"
+#include "assert_def.h"
 
 #define STACK_MAX_SIZE 16
 

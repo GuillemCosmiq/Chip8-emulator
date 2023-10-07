@@ -1,5 +1,7 @@
 #include "chip8.h"
 #include "opcodes.h"
+#include "assert_def.h"
+
 #include <stdio.h>
 
 void chip8_Alloc(const Chip8 **const chip8)
